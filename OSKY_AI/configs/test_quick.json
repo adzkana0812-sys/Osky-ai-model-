@@ -1,0 +1,28 @@
+{
+  "model_name": "OSKY-AI-QuickTest",
+  "vocab_size": 512,
+  "hidden_dim": 128,
+  "num_layers": 2,
+  "num_heads": 2,
+  "max_seq_len": 128,
+  "ffn_dim": 512,
+  "dropout": 0.1,
+  "norm_type": "rmsnorm",
+  "use_rope": true,
+  "tie_weights": true,
+  "activation": "silu",
+  "training": {
+    "batch_size": 4,
+    "gradient_accumulation_steps": 1,
+    "learning_rate": 1e-3,
+    "min_learning_rate": 1e-4,
+    "warmup_steps": 10,
+    "max_steps": 40,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "eval_interval": 20,
+    "eval_steps": 5,
+    "save_interval": 20,
+    "seed": 42
+  }
+}

@@ -1,0 +1,16 @@
+OSKY AI adalah model kecerdasan buatan berbasis Transformer yang dibangun dari nol.
+Arsitektur neural network modern ini menggunakan representasi posisi rotari atau Rotary Position Embedding (RoPE).
+Setiap blok transformer terdiri atas normalisasi RMSNorm, Causal Multi-Head Self-Attention, dan SwiGLU Feed-Forward Network.
+Mekanisme Causal Masking memastikan bahwa setiap posisi hanya dapat memperhatikan token yang muncul sebelum dirinya.
+Hal ini memungkinkan model melakukan pemodelan bahasa secara autoregresif dengan probabilitas kondisional.
+
+Proses pelatihan neural network melibatkan perhitungan forward pass, penghitungan Cross-Entropy Loss, serta backpropagation untuk memperbarui bobot model.
+Optimizer AdamW digunakan bersama penjadwal learning rate Cosine Annealing dengan tahap Linear Warmup.
+Checkpoint menyimpan status bobot model, optimizer, learning rate scheduler, serta nomor langkah pelatihan.
+Evaluasi model dilakukan dengan mengukur loss pada data validasi serta menghitung nilai Perplexity (PPL).
+Semakin rendah nilai Perplexity, semakin akurat model dalam memprediksi token berikutnya dalam suatu kalimat bahasa.
+
+Inference engine OSKY AI beroperasi sepenuhnya secara offline tanpa membutuhkan koneksi internet atau API pihak ketiga.
+Teknik sampling seperti Temperature, Top-K, Top-P, serta Repetition Penalty diterapkan untuk menghasilkan jawaban yang bervariasi dan koheren.
+Konteks percakapan multi-turn dikelola menggunakan jendela geser atau sliding context window yang dapat disesuaikan.
+API lokal menyediakan endpoint HTTP yang aman dengan autentikasi kunci API SHA-256 dan pembatasan laju permintaan (rate limiting).

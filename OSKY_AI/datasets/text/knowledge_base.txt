@@ -1,0 +1,8 @@
+# DOKUMEN PENGETAHUAN LOKAL OSKY AI
+OSKY AI (Osky Artificial Intelligence) adalah model kecerdasan buatan independen yang dibangun 100% dari nol (random weight initialization).
+Sistem ini menggunakan arsitektur modern Autoregressive Causal Decoder-Only Transformer dilengkapi Rotary Position Embedding (RoPE), RMSNorm, dan SwiGLU Feed-Forward Network.
+
+Untuk kemampuan vision dan multimodal, OSKY AI menggunakan Vision Transformer (ViT) lokal yang membagi gambar menjadi patch dan memproyeksikannya langsung ke ruang embedding language model.
+Model OCR dan pengenalan tulisan tangan menggunakan Convolutional Recurrent Neural Network (CRNN) dengan Connectionist Temporal Classification (CTC) loss.
+Sistem penelusuran web (Web Research) beroperasi secara terpisah sebagai alat bantu eksternal yang menyediakan sitasi sumber terverifikasi tanpa mengubah bobot internal model secara otomatis.
+Penyimpanan pengetahuan jangka panjang dikelola menggunakan indeks retrieval lokal mandiri berbasis TF-IDF dan hashing representasi subword.

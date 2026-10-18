@@ -1,0 +1,4 @@
+{"image": "datasets/multimodal/mobil.jpg", "question": "Apa yang ada di gambar?", "answer": "Sebuah mobil berwarna merah."}
+{"image": "datasets/multimodal/kucing.jpg", "question": "Hewan apa ini?", "answer": "Ini adalah gambar seekor kucing."}
+{"image": "datasets/multimodal/diagram.png", "messages": [{"role": "user", "content": "Apa yang terlihat pada diagram ini?"}, {"role": "assistant", "content": "Terlihat alur proses komputasi neural network."}]}
+{"image": "datasets/multimodal/catatan.jpg", "messages": [{"role": "user", "content": "Baca tulisan di kertas ini."}, {"role": "assistant", "content": "Tulisannya adalah: Halo OSKY AI."}]}

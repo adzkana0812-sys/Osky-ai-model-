@@ -1,0 +1,6 @@
+{
+  "name": "OSKY AI",
+  "description": "Tanya Jawab Neural Network - Antarmuka cerdas tanya jawab berbasis jaringan syaraf tiruan (Neural Network) dengan pemahaman multi-bahasa, toleransi singkatan dan typo, serta analisis murni tanpa jawaban template.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

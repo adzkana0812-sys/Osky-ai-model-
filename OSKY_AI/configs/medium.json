@@ -1,0 +1,28 @@
+{
+  "model_name": "OSKY-AI-Medium",
+  "vocab_size": 4096,
+  "hidden_dim": 512,
+  "num_layers": 8,
+  "num_heads": 8,
+  "max_seq_len": 512,
+  "ffn_dim": 2048,
+  "dropout": 0.1,
+  "norm_type": "rmsnorm",
+  "use_rope": true,
+  "tie_weights": true,
+  "activation": "silu",
+  "training": {
+    "batch_size": 8,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 3e-4,
+    "min_learning_rate": 3e-5,
+    "warmup_steps": 250,
+    "max_steps": 10000,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "eval_interval": 250,
+    "eval_steps": 30,
+    "save_interval": 1000,
+    "seed": 42
+  }
+}

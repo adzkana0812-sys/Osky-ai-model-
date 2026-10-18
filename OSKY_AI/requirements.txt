@@ -1,0 +1,7 @@
+# OSKY AI - Framework & Computational Dependencies
+# HANYA digunakan sebagai kerangka kerja komputasi tensor & pemrosesan data dasar.
+# TIDAK mengunduh model pretrained dari HuggingFace, OpenAI, atau pihak ketiga manapun.
+
+torch>=2.0.0
+numpy>=1.24.0
+pillow>=9.0.0
